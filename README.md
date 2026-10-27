@@ -1,20 +1,20 @@
-# 🏆 Telco Customer Churn Prediction System
+#  Telco Customer Churn Prediction System
 
 > **Production-Ready · Business-Oriented · Anti-Overfitting · MLOps**
 
-## 📋 Project Overview
+##  Project Overview
 
 End-to-end Machine Learning system for predicting customer churn in telecommunications, built with industrial best practices.
 
 ### Key Achievements
-- ✅ **No data leakage** — all preprocessing inside sklearn Pipeline
-- ✅ **Anti-overfitting** — constrained hyperparameters, regularization, early stopping
-- ✅ **Robust validation** — Stratified K-Fold CV, nested CV, stability analysis
-- ✅ **Business-optimized** — cost-based threshold tuning, ROI analysis
-- ✅ **Production-ready** — FastAPI, Streamlit, Docker, monitoring
-- ✅ **Interpretable** — SHAP explanations, feature importance, risk segmentation
+-  **No data leakage** — all preprocessing inside sklearn Pipeline
+-  **Anti-overfitting** — constrained hyperparameters, regularization, early stopping
+-  **Robust validation** — Stratified K-Fold CV, nested CV, stability analysis
+-  **Business-optimized** — cost-based threshold tuning, ROI analysis
+-  **Production-ready** — FastAPI, Streamlit, Docker, monitoring
+-  **Interpretable** — SHAP explanations, feature importance, risk segmentation
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 churntele/
@@ -38,7 +38,7 @@ churntele/
 └── README.md
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 ```bash
@@ -73,18 +73,18 @@ docker build -t churn-predictor .
 docker run -p 8000:8000 churn-predictor
 ```
 
-## 📊 Models Used
+##  Models Used
 
 | Model | Anti-Overfitting Strategy |
 |-------|--------------------------|
 | Logistic Regression | L1/L2 regularization, class_weight='balanced' |
 | Random Forest | max_depth=10, min_samples_leaf=5, max_features='sqrt' |
 | XGBoost | max_depth=5, gamma=1.0, reg_alpha/lambda, subsample=0.8 |
-| LightGBM ⭐ | max_depth=7, num_leaves=31, reg_alpha/lambda, subsample=0.8 |
+| LightGBM  | max_depth=7, num_leaves=31, reg_alpha/lambda, subsample=0.8 |
 | CatBoost | depth=6, l2_leaf_reg=5, auto_class_weights='Balanced' |
 | Stacking Ensemble | LR + RF + XGB + LGBM → LogisticRegression meta-learner, evaluated then rejected for production cost/benefit |
 
-## 🎯 API Usage
+##  API Usage
 
 ### Predict Endpoint
 ```bash
@@ -127,7 +127,7 @@ curl -X POST http://localhost:8000/predict \
 }
 ```
 
-## 💰 Business Value
+##  Business Value
 
 | Metric | Impact |
 |--------|--------|
@@ -137,7 +137,7 @@ curl -X POST http://localhost:8000/predict \
 | **Expected annual ROI** | 400-800% |
 | **Retention success rate** | 30% (conservative) |
 
-## 🔬 Scientific Rigor
+##  Scientific Rigor
 
 ### Data Leakage Prevention
 - Train/test split BEFORE any preprocessing
@@ -152,19 +152,11 @@ curl -X POST http://localhost:8000/predict \
 - Mean ± std across folds for stability assessment
 - Overfitting detection via train-test metric gaps
 
-## 📈 Monitoring
+##  Monitoring
 
 - **PSI (Population Stability Index)** for data drift detection
 - **Prediction drift** tracking for model degradation
 - Automated alerts: PSI > 0.1 (monitor), PSI > 0.2 (retrain)
-
-## 👤 Author
-
-Built for PFE (Projet de Fin d'Études) — Data Science / ML Engineering
-
-## 📄 License
-
-MIT
 
 ---
 
