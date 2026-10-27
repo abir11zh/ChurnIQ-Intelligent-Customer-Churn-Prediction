@@ -1,0 +1,45 @@
+{
+  "threshold": 0.6199999999999998,
+  "trained_on": "2026-06-09T22:56:17.964486",
+  "model": "Logistic Regression",
+  "version": "4.0.0",
+  "features": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "AvgMonthlySpend",
+    "NoServices",
+    "NumServices",
+    "IsMonthToMonth"
+  ],
+  "metrics": {
+    "test_recall": 0.8128342245989305,
+    "test_f1": 0.642706131078224,
+    "test_auc": 0.8458368854788292,
+    "test_precision": 0.5314685314685315
+  },
+  "available_models": [
+    "CatBoost",
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost",
+    "LightGBM",
+    "Extra Trees",
+    "Decision Tree"
+  ]
+}

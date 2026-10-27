@@ -1,0 +1,17 @@
+# Local databases and secrets
+*.sqlite3
+*.db
+.env
+.env.*
+!.env.example
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Training output and local tooling
+catboost_info/
+.pytest_cache/
+.streamlit/secrets.toml

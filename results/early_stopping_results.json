@@ -1,0 +1,30 @@
+{
+  "XGBoost": {
+    "model_type": "XGBoost",
+    "best_iteration": 137,
+    "best_score": 0.8508232372531006,
+    "early_stopping_rounds": 100,
+    "n_estimators_requested": 300,
+    "val_auc": 0.8435490353697749,
+    "curve_length": 300
+  },
+  "LightGBM": {
+    "model_type": "LightGBM",
+    "best_iteration": 47,
+    "best_score": 0.8510995636196601,
+    "early_stopping_rounds": 100,
+    "n_estimators_requested": 300,
+    "val_auc": 0.8510995636196601,
+    "curve_length": 148
+  },
+  "CatBoost": {
+    "model_type": "CatBoost",
+    "best_iteration": 50,
+    "best_score": 0.8484152503445108,
+    "od_type": "Iter",
+    "od_wait": 100,
+    "n_estimators_requested": 300,
+    "val_auc": 0.8484152503445108,
+    "curve_length": 151
+  }
+}
